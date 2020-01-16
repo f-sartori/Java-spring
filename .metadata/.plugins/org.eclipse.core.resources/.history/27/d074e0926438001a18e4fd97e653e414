@@ -1,0 +1,10 @@
+package com.eletronics.eletro.model;
+
+public class Computador extends Eletronico {
+	
+
+	Integer hd;
+
+	
+
+}

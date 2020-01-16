@@ -1,0 +1,8 @@
+package com.eletronics.eletro.model;
+
+public class Celular {
+	
+	Integer memoria;
+	
+	
+}

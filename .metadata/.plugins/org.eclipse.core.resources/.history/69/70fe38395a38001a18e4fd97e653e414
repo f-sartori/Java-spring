@@ -1,0 +1,20 @@
+package com.generation.hello.demo.entities;
+
+public class Carne {
+	
+	Integer id;
+	String tipo;
+	Integer qtdEstoque;
+	
+	
+	
+	public Carne(Integer id, String tipo, Integer qtdEstoque) {
+	
+		this.id = id;
+		this.tipo = tipo;
+		this.qtdEstoque = qtdEstoque;
+	}
+	
+	
+	
+}

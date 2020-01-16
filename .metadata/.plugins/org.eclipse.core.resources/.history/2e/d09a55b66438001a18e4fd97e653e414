@@ -1,0 +1,13 @@
+package com.eletronics.eletro.model;
+
+public class Celular extends Eletronico {
+	
+	Integer memoria;
+
+	public Celular(Integer id, String nome, Double preco, Integer memoria) {
+		super(id, nome, preco);
+		this.memoria = memoria;
+	}
+	
+	
+}

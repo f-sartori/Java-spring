@@ -1,0 +1,32 @@
+package com.generation.hello.demo.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.generation.hello.demo.entities.Carne;
+import com.generation.hello.demo.service.CarnveService;
+
+@RestController
+public class CarneController {
+	
+	@GetMapping("/carnes")
+	@ResponseBody
+	public void primeiraPagCarne() {
+		
+		CarnveService service = new CarnveService();
+		Carne c1 = new Carne(1, "Boi", 100);
+		Carne c2 = new Carne(2, "Porco", 200);
+		Carne c3 = new Carne(3, "Frango", 300);
+		service.addLista(c1);
+		service.addLista(c2);
+		service.addLista(c3);
+		
+		service.getAll();
+	
+		
+		
+		
+	}
+
+}

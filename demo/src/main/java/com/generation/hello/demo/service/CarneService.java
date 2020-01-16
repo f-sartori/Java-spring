@@ -1,0 +1,44 @@
+package com.generation.hello.demo.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.generation.hello.demo.entities.Carne;
+
+public class CarneService {
+
+	List<Carne> carnes = new ArrayList<Carne>();
+	
+	public CarneService() {
+		
+	}
+
+	public CarneService(List<Carne> carnes) {
+		super();
+		this.carnes = carnes;
+	}
+	
+	
+	public void addLista(Carne carne) {
+		carnes.add(carne);
+	}
+	
+	public List<Carne> getAll() {
+		
+
+		return carnes;
+		
+		
+	}
+
+	@Override
+	public String toString() {
+		return "CarneService [carnes=" + carnes + "]";
+	}
+	
+	
+	
+	
+	
+	
+}

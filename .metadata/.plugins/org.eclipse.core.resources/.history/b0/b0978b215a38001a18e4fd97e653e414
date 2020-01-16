@@ -1,0 +1,5 @@
+package com.generation.hello.demo.entities;
+
+public class Carne {
+
+}

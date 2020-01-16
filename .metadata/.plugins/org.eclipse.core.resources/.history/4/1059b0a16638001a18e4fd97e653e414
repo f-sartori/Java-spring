@@ -1,0 +1,36 @@
+package com.eletronics.eletro.service;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.eletronics.eletro.model.Eletronico;
+
+
+
+@RestController
+public class EletronicosController {
+	
+	@GetMapping("/eletronicos")
+	@ResponseBody
+	public List<Eletronico> primeiraPagEle() {
+		
+		CarneService service = new CarneService();
+		Carne c1 = new Carne(1, "Boi", 100);
+		Carne c2 = new Carne(2, "Porco", 200);
+		Carne c3 = new Carne(3, "Frango", 300);
+		Carne c4 = new Carne(4, "Frango", 500);
+		service.addLista(c1);
+		service.addLista(c2);
+		service.addLista(c3);
+		service.addLista(c4);
+		
+	
+		
+		
+		return service.getAll();
+	}
+
+}

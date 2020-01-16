@@ -1,0 +1,40 @@
+package com.generation.hello.demo.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.generation.hello.demo.entities.Carne;
+
+public class CarneService {
+
+	List<Carne> carnes = new ArrayList<Carne>();
+	
+	public CarnveService() {
+		
+	}
+
+	public CarnveService(List<Carne> carnes) {
+		super();
+		this.carnes = carnes;
+	}
+	
+	
+	public void addLista(Carne carne) {
+		carnes.add(carne);
+	}
+	
+	public Carne getAll() {
+		
+		for (Carne carne : carnes) {
+			return(carne);
+			
+		}
+		return null;
+		
+		
+	}
+	
+	
+	
+	
+}

@@ -1,0 +1,12 @@
+package com.eletronics.eletro.model;
+
+public abstract class Eletronico {
+	
+	
+	Integer id;
+	String nome;
+	Double preco;
+	
+	
+
+}

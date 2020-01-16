@@ -1,0 +1,20 @@
+package com.eletronics.eletro.model;
+
+public abstract class Eletronico {
+	
+	
+	Integer id;
+	String nome;
+	Double preco;
+	
+	
+	public Eletronico(Integer id, String nome, Double preco) {
+		super();
+		this.id = id;
+		this.nome = nome;
+		this.preco = preco;
+	}
+	
+	
+
+}

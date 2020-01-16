@@ -1,0 +1,17 @@
+package com.eletronics.eletro.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.eletronics.eletro.model.Computador;
+import com.eletronics.eletro.model.Eletronico;
+
+public class EletronicoService {
+	List<Eletronico> eletronicos = new ArrayList<Eletronico>();
+	
+	Computador c1 = new Computador(1, "me", 100.0, 50);
+	
+	
+	
+
+}
